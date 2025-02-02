@@ -3,12 +3,12 @@ class Program
 {
     static void Main()
     {
-        string word;
+        
        Console.WriteLine("Welcome to HangMan! (fruit edition)");
         do
         {
-            word = RandomWord();
-            HangMan(word,Difficulty());
+           
+            HangMan(RandomWord(),Difficulty());
             Console.WriteLine("Would you like to play again? (y/n)");
         }
         while ((Console.ReadLine().ToLower() == "y"));
